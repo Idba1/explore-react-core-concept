@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <h1>vite + react</h1>
-      <Todo task='do it' isDone={true}></Todo>
-      <Todo task='jsx' isDone={false}></Todo>
-      <Todo task='good'></Todo>
+      <Todo task='html : ' isDone={true}></Todo>
+      <Todo task='jsx : ' isDone={false}></Todo>
+      <Todo task='css : '></Todo>
       {/* <Student></Student>
       <Student2></Student2>
       <Student3 grad="7" score = "2.83"></Student3>
