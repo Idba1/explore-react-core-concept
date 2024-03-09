@@ -34,8 +34,28 @@
 // COnditional rendering Option:3
 // ternary operator
 
+// export default function Todo({task, isDone}){
+//     return (
+//         <li>{task}{isDone? "Finished" : "Do it"}</li>
+//     );
+// }
+
+
+// COnditional rendering Option:4
+// and operator &&
+
+// export default function Todo({task, isDone}){
+//     return (
+//         <li>{task}{isDone && "Finished"}</li>
+//     );
+// }
+
+
+// COnditional rendering Option:4
+// or operator ||
+
 export default function Todo({task, isDone}){
     return (
-        <li>{task}{isDone? "Finished" : "Do it"}</li>
+        <li>{task}{isDone || "do it"}</li>
     );
 }
