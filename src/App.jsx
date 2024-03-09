@@ -14,6 +14,9 @@ function App() {
       <Student3 grad="7" score = "2.83"></Student3>
       <Device name="Laptop" Price="70"></Device>
       <Device name="Mobille" Price="20"></Device>
+      <Developer name='Sajal' salary="100000"></Developer>
+      <Developer name='Marfi' salary="200000"></Developer>
+      <Developer></Developer>
     </>
   )
 }
@@ -53,7 +56,6 @@ function Student2() {
 }
 
 
-
 function Student3(props) {
   return (
     <div style={{
@@ -74,6 +76,15 @@ function Device(props){
   // console.log(props);
   return(
     <h2>This device name: {props.name}; price: {props.Price}</h2>
+  )
+}
+
+
+function Developer({name="undefiend",salary=0}){
+  return (
+    <>
+      <h3>Developer name: {name}. her salary {salary}</h3>
+    </>
   )
 }
 export default App
