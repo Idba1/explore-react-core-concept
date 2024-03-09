@@ -3,16 +3,29 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Todo from './Todo'
+import Actor from './Actor'
 
 function App() {
   const [count, setCount] = useState(0)
 
+  const actors = ['sakib', 'razz', 'bobi', 'salman', 'siam'];
+    // return (
+    //     <li>Name : {name}</li>
+    // )
+
   return (
     <>
       <h1>vite + react</h1>
-      <Todo task='html : ' isDone={true}></Todo>
+      {/* <Actor actor={"Razz"}></Actor> */}
+      {
+        actors.map(actor => <Actor name={actor}></Actor>)
+      }
+      {/* <Actor name={"Bappa Raz"}></Actor> */}
+
+      {/* <Todo task='html : ' isDone={true}></Todo>
       <Todo task='jsx : ' isDone={false}></Todo>
-      <Todo task='css : '></Todo>
+      <Todo task='css : '></Todo> */}
+
       {/* <Student></Student>
       <Student2></Student2>
       <Student3 grad="7" score = "2.83"></Student3>
