@@ -12,6 +12,8 @@ function App() {
       <Student></Student>
       <Student2></Student2>
       <Student3 grad="7" score = "2.83"></Student3>
+      <Device name="Laptop" Price="70"></Device>
+      <Device name="Mobille" Price="20"></Device>
     </>
   )
 }
@@ -67,4 +69,11 @@ function Student3(props) {
   )
 }
 
+
+function Device(props){
+  // console.log(props);
+  return(
+    <h2>This device name: {props.name}; price: {props.Price}</h2>
+  )
+}
 export default App
