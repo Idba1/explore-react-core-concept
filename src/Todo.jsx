@@ -51,11 +51,26 @@
 // }
 
 
-// COnditional rendering Option:4
+// COnditional rendering Option:5
 // or operator ||
 
+// export default function Todo({task, isDone}){
+//     return (
+//         <li>{task}{isDone || "do it"}</li>
+//     );
+// }
+
+
+// Conditional rendering : 6
+// variable 
+
 export default function Todo({task, isDone}){
-    return (
-        <li>{task}{isDone || "do it"}</li>
-    );
+    let itemList;
+    if(isDone){
+        itemList = <li> {task} Finished </li>
+    }
+    else{
+       itemList = <li> {task} work on this </li>
+    }
+    return itemList;
 }
